@@ -7,4 +7,6 @@ We managed to add many cool cosmetic features like the circle following the curs
 
 It was honestly a very fun experience, I got to learn a lot of HTML and CSS, along with a sprinke of JS.
 
-The competition was fun in the end, we unfortunately didn't win. 
+The competition was fun in the end, we unfortunately didn't win.
+
+We used Visual Studio Code and Photoshop for this.
