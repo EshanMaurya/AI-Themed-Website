@@ -1,0 +1,687 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap'); /* Baloo Chettan*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@700&display=swap'); /* Baloo Chettan  Bold*/
+
+*{
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;;
+}
+h1,h2{
+    user-select: none;
+}
+
+.layer{
+    margin:0;
+    padding:0;
+    font-family:'Baloo Chettan 2', cursive;
+}
+
+.parallax{
+    height:100vh;
+    margin-left:-10px;
+    padding-right:10px;
+    margin-top: 5%;
+    background:#111;
+    width:100%;
+    user-select:none;
+    position:relative;
+}
+
+.parallax section{
+    position:relative;
+    height: 100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.parallax section h2{
+    position:relative;
+    color:#fff;
+    font-size:12em;
+}
+
+.parallax section img{
+    position:absolute;
+    top:0;
+    left:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+:root{
+    --background-1:#040603;
+    --background-2: #0D0155;
+    --background-3: #2900CB;
+    --background-4: #6315F7;
+    --background-5: #BB5CF6;
+}
+
+
+.navbar
+{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+margin-top:-22px;
+padding:10px;
+
+position: fixed;
+width: 100%;
+height: 10%;
+left: 0px;
+top: 0px;
+z-index:5;
+opacity: 1;
+
+
+padding-bottom: 13px;
+
+background: var(--background-5);
+}
+.navbar img{
+    position: absolute;
+    margin-left:92%;
+    width:70px;
+    height:70px;
+    margin-top:20px;
+    cursor:pointer;
+}
+.dropdown
+{
+
+display: none;
+flex-direction:row;
+justify-content:space-around;
+margin-top:90px;;
+padding:0px;
+align-items:center;
+
+position: fixed;
+width: 100%;
+height: 17%;
+left: 0px;
+top: 0px;
+z-index:5;
+
+
+padding-bottom: 13px;
+
+background: var(--background-1);
+
+}
+.dropdown ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.dropdown a{
+    text-decoration: none;
+    color:var(--background-5);
+    font-family:'Roboto Condensed',sans-serif;
+    background:none;
+    border:none;
+    font-size:50px;
+    cursor:pointer;;
+    font-weight:bold;
+
+}
+
+
+.bottomlist{
+    margin-top: 5%;
+    margin-left:-8%;
+
+}
+.bottomlist a{
+    opacity:80%
+}
+.toplist{
+    margin-left:-13%;
+}
+.Type1{
+    background-color:var(--background-4);
+    display:flex;
+    overflow:hidden;
+}
+.Type1 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+
+    
+    color: #BB5CF6;
+}
+.Type1 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top: 300px;
+    bottom:300px;
+    
+    color: #BB5CF6;
+    padding-top:20px;
+    padding-bottom:80px;
+}
+.Type1 img{
+    height:50%;
+    width:50%;
+    padding-top:50px;
+    padding-right:100px;
+    padding-bottom:40px;
+}
+
+
+.UsageofAI{
+    background-color:var(--background-2);
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    align-content: center;
+    justify-content: center;
+    overflow:hidden;
+}
+.UsageofAI h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    text-align: center;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color: var(--background-5);
+}
+.UsageofAI h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 58px;
+    transition:0.2s;
+    text-align: center;
+    padding-bottom:80px;
+    
+    color: var(--background-5);
+}
+.UsageofAI img{
+    height:10%;
+    width:10%;
+}
+
+.Type2{
+    background-color:var(--background-4);
+    display:flex;
+}
+.Type2 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:110px;
+    padding-bottom:30px;
+    
+    color: #BB5CF6;
+}
+.Type2 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom:80px;
+    padding-bottom:30px;
+    
+    color: #BB5CF6;
+}
+.Type2 img{
+    height:200%;
+    width:200%;
+    margin-right:-100px;
+}
+.Type3{
+    background-color:var(--background-3);
+    display:flex;
+}
+.Type3 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color:var(--background-5);
+}
+.Type3 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom:80px;
+    
+    color: #BB5CF6;
+}
+.Type3 img{
+    height:40%;
+    width:40%;
+}
+
+.Type4{
+    background-color:var(--background-2);
+    display:flex;
+}
+.Type4 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color:var(--background-5);
+}
+.Type4 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom:80px;
+    
+    color: #BB5CF6;
+}
+.Type4 img{
+    height:55%;
+    width:55%;
+}
+
+.cursor{
+    position:fixed;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#fff;
+    transition:0.1s;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    mix-blend-mode:soft-light;
+    z-index:4;
+}
+.eyes
+{
+    position: absolute;
+    padding:10px;
+    padding-left:250px;
+    display: flex;
+    overflow:hidden;
+}
+.eyes .eye
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    left: 10px;
+    top: 10px;
+    display: block;
+    background: whitesmoke;
+    margin: 0 300px;
+    border-radius: 50%;
+}
+.eyes .eye::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: darkslateblue;
+    border-radius: 50%;
+}
+
+.Type5{
+    background-color:var(--background-4);
+    display:flex;
+}
+.Type5 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color:var(--background-5);
+}
+.Type5 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom:80px;
+    
+    color: #BB5CF6;
+}
+.Type5 img{
+    padding-top:40px;
+    height:35%;
+    width:35%;
+}
+.Type6{
+    background-color:var(--background-3);
+    display:flex;
+}
+.Type6 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color:var(--background-5);
+}
+.Type6 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom:80px;
+    
+    color: #BB5CF6;
+}
+.Type6 img{
+    padding-top:40px;
+    padding-right:50px;
+    height:50%;
+    width:50%;
+    padding-bottom:40px;
+}
+.Type7{
+    background-color:var(--background-2);
+    display:flex;
+}
+.Type7 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color:var(--background-5);
+}
+.Type7 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom:80px;
+    
+    color: #BB5CF6;
+}
+.Type7 img{
+    padding-top:20px;
+    padding-right:50px;
+    height:100%;
+    width:100%;
+
+}
+.Type8{
+    background-color:var(--background-4);
+    display:flex;
+}
+.Type8 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color:var(--background-5);
+}
+.Type8 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom:70px;
+    
+    color: #BB5CF6;
+}
+.Type8 img{
+    padding-top:20px;
+    padding-right:50px;
+    height:100%;
+    width:100%;
+
+}
+
+.Type9{
+    background-color:var(--background-3);
+    display:flex;
+}
+.Type9 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color:var(--background-5);
+}
+.Type9 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom: 80px;
+    
+    color: #BB5CF6;
+}
+.Type9 img{
+    padding-top:20px;
+    padding-right:10px;
+    height:50%;
+    width:50%;
+
+}
+
+.Type10{
+    background-color:var(--background-4);
+    display:flex;
+}
+.Type10 h1
+{
+
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color:var(--background-5);
+}
+.Type10 h2{
+    padding-left:5%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom:80px;
+    
+    color: #BB5CF6;
+}
+.Type10 img{
+    padding-top:20px;
+    padding-right:100px;
+    height:30%;
+    width:30%;
+    padding-bottom:20px;
+
+}
+
+.Type11{
+    background-color:var(--background-3);
+    display:flex;
+}
+.Type11 h1
+{
+
+    padding-left:3%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 58px;
+    transition:0.2s;
+    padding-top:80px;
+    padding-bottom:30px;
+    
+    color:var(--background-5);
+}
+.Type11 h2{
+    padding-left:3%;
+    font-family:'Baloo Chettan 2',cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 58px;
+    transition:0.2s;
+    left:51px;
+    top:122px;
+    padding-bottom:80px;
+    
+    color: #BB5CF6;
+}
+.Type11 img{
+    padding-top:30px;
+    padding-right:0px;
+    height:80%;
+    width:80%;
+    padding-bottom:10px;
+
+}
+
+h1 {
+    font-weight:700
+}
+.footer{
+    height:10vh;
+    background-color:var(--background-5);
+}

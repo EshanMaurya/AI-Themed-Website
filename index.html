@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importance of A.I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left=e.clientX+'px';
+            cursor.style.top=e.clientY+'px';
+        })
+    </script>
+
+    <div class="navbar">
+        <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+        </div>
+        <button type="button" class="button"><img src="images/hamburger.png"></button>
+    </div>
+    <div class="dropdown">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+        </ul>
+        <img src="images/rectangledivider.png">
+        <ul>
+            <li><a href="#importance">Importance of A.I</a></li>
+        </ul>
+        <img src="images/rectangledivider.png">
+        <ul>
+            <li><a href="#usage">Usage of A.I</a>></li>
+        </ul>
+    
+    </div>
+    <script>
+        let btn = document.querySelector('.button');
+        let div = document.querySelector('.dropdown');
+        btn.addEventListener('click',()=>{
+            if(div.style.display==='none'){
+                div.style.display='flex'; 
+            }
+            else{
+                div.style.display='none';
+            }
+        })
+        
+    </script>
+    <script>
+        document.querySelector('body').addEventListener('mousemove', eyeball)
+        function eyeball(){
+            var eye = document.querySelectorAll('.eye');
+            eye.forEach(function(eye){
+                let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+                let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+                let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                let rot = (radian * (180 / Math.PI) * -1) + 270;
+                eye.style.transform = "rotate("+ rot +"deg)";
+            })
+        }
+    </script>
+    <div class="parallax">
+        <section>
+            <img src="images/Parallax/1.png" data-speed="-6"class = "layer">
+            <img src="images/Parallax/2.png"data-speed="-5"class="layer">
+            <img src="images/Parallax/3.png"data-speed="-10"class="layer">
+            <img src="images/Parallax/4.png"data-speed="-8"class="layer">
+            <img src="images/Parallax/5.png"data-speed="6"class="layer">
+            <img src="images/Parallax/6.png"data-speed="4"class="layer">
+            <img src="images/Parallax/7.png"data-speed="-5"class="layer">
+            <h2 class="layer">Artificial Intelligence</h2>>
+        </section>
+        <script type="text/javascript">
+            document.addEventListener("mousemove",parallax);
+            function parallax(e){
+                this.querySelectorAll('.layer').forEach(layer => {
+                    const speed = layer.getAttribute('data-speed')
+                    const x = (window.innerWidth=e.pageX*speed)/100
+                    const y = (window.innerWidth=e.pageY*speed)/100
+
+                    layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+                })
+            }
+        </script>
+    </div>
+    <div class="Type1" id="introduction">
+        <div>
+            <h1>What is Artificial intelligence</h1>
+            <h2> Artificial intelligence is the ability of a computer program or machine to think and learn</h2>
+            <div class="cursor"></div>
+        </div>
+        <img src="images/BrainIntellect.png" alt="Brain">
+    </div>
+    <div class="Type9"id="importance">
+        <img src="images/JohnMcCarthy.png" alt="John McCarthy">
+        <div>
+            <h1>Origins of A.I</h1>
+            <h2>The ‘beginning’ of modern A.I can be traced back to 1956, at Dartmouth College where the term ‘A.I’ was coined  by John McCarthy.</h2>
+        </div>
+    </div>
+    <div class="UsageofAI">
+        <div>
+            <h1>Importance of A.I</h1>
+            <h2> Let’s answer the big question: What is the importance of A.I? Why do we even care?</h2>
+        </div>
+    </div>
+    <div class="Type10">
+        <div>
+            <h1>Human-like capabilities</h1>
+            <h2> A.I is getting better and better at doing the normal human capabilities- understanding, reasoning, planning, communication and perception.</h2>
+            <div class="cursor"></div>
+        </div>
+        <img src="images/human.png" alt="Human">
+    </div>
+    <div class="Type11"id="usage">
+        <img src="images/Expandability.png"alt="Expanding Lines">
+        <div>
+            <h1>Expandability </h1>
+            <h2>A.I just like any computer, can be increased in power and numbers. The world’s data consumption and production rate is increasing so much that humans simply won’t suffice, which is why A.I is of great use.</h2>
+        </div>
+    </div>
+    <div class="UsageofAI">
+        <div>
+            <h1>Usage of A.I in real life</h1>
+            <h2> Artificial intelligence has been used in many places around the Globe, here are a few</h2>
+        </div>
+    </div>
+    </div>
+    <div class="Type2">
+        <div>
+            <h1>Online Shopping and Advertising</h1>
+            <h2> A.I is being widely used to provide personalized recommendations to people based on the data from their previous searches and purchaces or other online behavior. Amazon is  the most popular for this.</h2>
+        </div>
+        <img src="images/amazonlogo.png"alt="Amazon">
+
+    </div>
+    <div class="Type3">
+        <img src="images/Google logo.png"alt="Google">
+        <div>
+            <h1>Web search</h1>
+            <h2> Search engines learn from the vast input of data, provided by their users to provide relevant search results.</h2>
+        </div>
+        
+
+    </div>
+    <div class="Type4">
+        <div>
+            <h1>Health</h1>
+            <h2> Researchers use A.I to analyse large quantities of data from hospitals to discover patterns that could lead to new discoveries in medicine.</h2>
+  
+        </div>
+        <img src="images/Heart.png"alt="Heart">
+    </div>
+    <div class="Type5">
+        <img src="images/Netflix Logo.png"alt="Netflix">
+        <div>
+            <h1>Language Translation</h1>
+            <h2>A.I has been used numerable times in the translation of written or spoken text. This brings rise to functions like automated subtitling. Companies like Netflix use this in movies and shows.</h2>
+        </div>
+        
+    </div>
+    <div class="Type6">
+
+        <div>
+            <h1>Cars</h1>
+            <h2>Many companies like Tesla are developing self-driving cars which rely on sensors and data from their drivers. They continously get better as they get more customers.</h2>
+        </div>
+        <img src="images/TeslaLogo.png"alt="Tesla">        
+    </div>
+    <div class="Type7">
+        <img src="images/Covid-19.png"alt="COVID-19">        
+        <div>
+            <h1>A.I Against COVID-19</h1>
+            <h2>A.I has been widely used in thermal imaging in airports . In medicine, it can help recognize infection from computerised tomography lung scans. It has also been used to provide data to track the spread of the disease.</h2>
+        </div>
+       
+    </div>
+    <div class="Type8">
+       
+        <div>
+            <h1>Chatbots</h1>
+            <h2>A Chatbot is a software that is used to replicate an on-line chat conversation using text or text-to-speech. This is widely used as a replacement for customer-service in large websites since it is cheaper.</h2>
+        </div>
+        <img src="images/Robot2.png"alt="Chatbot">        
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
